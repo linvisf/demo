@@ -16,8 +16,13 @@ class DemoItem(scrapy.Item):
     pass
 
 
-class AutoLogosItem(scrapy.Item):
+class AutoLogosItem(scrapy.Item):  # 车标
     cname_en = scrapy.Field()  # 国产车标英文：guochan
     cname_zn = scrapy.Field()  # 国产车标中文名
     name = scrapy.Field()      # 汽车名
     img_url = scrapy.Field()   # 车标url
+
+
+class BooksItem(scrapy.Item):  # 书
+    name = scrapy.Field()
+    price = scrapy.Field()
